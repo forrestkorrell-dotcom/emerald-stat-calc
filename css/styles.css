@@ -1,0 +1,266 @@
+/*
+ * Author: William Korrell
+ * Date: 7/27/26
+ * File Name: styles.css
+*/
+
+body, header, nav, main, footer, h1, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-image: url('../images/road.png');
+	background-repeat: repeat;
+	background-size: 96px 96px; 
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
+
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+header {
+	width: 100%;
+}
+
+header img {
+	max-width: 90%;
+}
+
+/* Styles for navigation area mobile-first */
+nav {
+	width: 100%;
+	margin: 1em 0;
+	background-color: #70c8a0;
+}
+
+nav ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #70c8a0;
+}
+
+nav li {
+	font-size: 1.2em;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+	background-color: #70c8a0;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 0.75em;
+}
+
+#hero {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	clear: both;
+}
+
+#hero img {
+	max-width: 30%;
+}
+
+@media (min-width: 1246px) {
+	#hero { 
+        	display: flex;
+	}
+
+    	.mobile {
+        	display: none;
+    	}
+
+    	.tablet-desktop {
+        	display: block;
+    	}
+
+    	header {
+       		width: 25%;
+        	float: left;
+    	}
+
+    	nav {
+        	width: auto;
+        	float: right;
+        	margin: 2em 1em 0 0;
+    	}
+
+    	nav ul {
+        	display: flex;
+        	justify-content: flex-end;
+    	}
+
+    	nav li {
+        	font-size: 1.3em;
+        	border-top: none;
+        	border-left: 1px solid #fff;
+    	}
+
+    	nav li:first-child {
+        	border-left: none;
+    	}
+
+	.tip {
+    		margin-bottom: 2em;
+    		text-align: left;
+	}
+
+	.mobile .tip img {
+    		width: 200px;
+   	 	max-width: 60%;
+    		margin: 0.5em auto;
+    		display: block;
+	}
+
+    	.tip {
+       		display: flex;
+        	align-items: center;
+        	gap: 2em;
+    	}
+
+   	 .tip-text {
+        	flex: 1 1 auto;
+    	}
+
+    	.tip img {
+    		flex: 0 0 500px;
+        	width: 500px;
+        	max-width: 500px;
+    	}
+}
+
+main {
+	clear: left;
+    	background-color: #70c8a0;
+	padding: 2%; font-size: 1.25em;
+	text-align: center;
+}
+
+footer {
+    	background-color: #70c8a0;
+	color: #fff;
+}
+
+.action {
+
+	font-size: 1.35em;
+	color: #66660;
+	font-weight: bold;
+}
+
+.team-section {
+	max-width: 1000px;
+	margin: 0 auto 3em;
+	color: #000;
+}
+
+.team-content {
+	display: flex;
+	gap: 2em;
+	align-items: flex-start;
+}
+
+.team-table {
+	flex: 1 1 400px;
+	border-collapse: collapse;
+}
+
+.team-table th,
+.team-table td {
+	padding: 0.5em 1em;
+	text-align: left;
+	border-bottom: 1px solid #444;
+}
+
+.team-table th {
+	background-color: #70c8a0;
+	color: #fff;
+}
+
+.team-content p {
+	flex: 1 1 300px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.calculator {
+	max-width: 700px;
+	margin: 2em auto;
+}
+
+.calc-row {
+	margin-bottom: 1em;
+}
+
+.calc-row label {
+	display: inline-block;
+	width: 100px;
+}
+
+.calc-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+
+.calc-table th,
+.calc-table td {
+    	padding: 0.5em;
+    	text-align: center;
+    	border-bottom: 1px solid #444;
+}
+
+.calc-table th {
+    	background-color: #70c8a0;
+    	color: #fff;
+}	
+
+.calc-table input {
+    	width: 60px;
+}
+
+#calc-btn {
+    	padding: 0.6em 1.5em;
+    	background-color: #70c8a0;
+    	color: #fff;
+    	border: none;
+    	cursor: pointer;
+    	font-weight: bold;
+}
+
+#calc-btn:hover {
+    	background-color: #5aad8a;
+}
+
+.tip {
+    	margin-bottom: 2em;
+    	text-align: left;
+}
+
+.mobile .tip img {
+    	width: 300px;
+    	max-width: 60%;
+    	margin: 0.5em auto;
+    	display: block;
+}
