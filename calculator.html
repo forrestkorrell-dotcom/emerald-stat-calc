@@ -1,0 +1,164 @@
+
+<!Doctype html>
+<!-- Author: William Korrell -->
+<html lang="en">
+<head>
+	<title> Pokemon Emerald Stat Calculator  </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+	<div id="container">	
+
+		<!-- Use the header area for the website name or logo -->
+		<header>
+			<a href="index.html"><img src="images/logo.png"" alt="pokemon logo"></a>
+		
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website -->
+		<nav>
+			<ul>
+
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="calculator.html">Stat Calculator</a></li>
+
+				<li><a href="teams.html">Recommended Teams</a></li>
+				
+				<li><a href="tips.html">Tips and Tricks</a></li>
+
+				<li><a href="contact.html">Contact and Disclaimer</a></li>
+			</ul>
+		</nav>
+
+		<!-- Hero Imaage -->
+		<div id="hero">
+			<img src="images/mon1.png":%s/[""]/"/g alt="Pokemon1">
+			<img src="images/games.png" alt="Pokemon2">
+		</div>
+
+<main>
+     
+    <h1>Gen 3 Stat Calculator</h1>
+    
+    <p>A Pokémon's stats are based on hidden IVs (random, 0–31, set at generation), EVs (earned through battling, up to 252 per stat), and Nature (boosts one stat 10%, lowers one 10%). Combined with base stats and level, these determine true stats. Use the calculator below to plug in your own values and see these resulting stats.</p>
+
+<div class="calculator">
+	<div class="calc-row">
+        	<label for="level">Level</label>
+        	<input type="number" id="level" value="50" min="1" max="100">
+   	 </div>
+
+    	<div class="calc-row">
+        	<label for="nature">Nature</label>
+        	<select id="nature">
+            	<option value="neutral" selected>Hardy (Neutral)</option>
+            	<option value="neutral">Docile (Neutral)</option>
+            	<option value="neutral">Serious (Neutral)</option>
+            	<option value="neutral">Bashful (Neutral)</option>
+            	<option value="neutral">Quirky (Neutral)</option>
+            	<option value="atk-up-def-down">Lonely</option>
+            	<option value="atk-up-spa-down">Adamant</option>
+            	<option value="atk-up-spd-down">Naughty</option>
+            	<option value="atk-up-spe-down">Brave</option>
+            	<option value="def-up-atk-down">Bold</option>
+            	<option value="def-up-spa-down">Impish</option>
+            	<option value="def-up-spd-down">Lax</option>
+            	<option value="def-up-spe-down">Relaxed</option>
+            	<option value="spa-up-atk-down">Modest</option>
+            	<option value="spa-up-def-down">Mild</option>
+            	<option value="spa-up-spd-down">Rash</option>
+            	<option value="spa-up-spe-down">Quiet</option>
+            	<option value="spd-up-atk-down">Careful</option>
+            	<option value="spd-up-def-down">Gentle</option>
+            	<option value="spd-up-spa-down">Sassy</option>
+            	<option value="spe-up-atk-down">Jolly</option>
+            	<option value="spe-up-def-down">Naive</option>
+            	<option value="spe-up-spa-down">Timid</option>
+            	<option value="spe-up-spd-down">Hasty</option>
+        	</select>
+    	</div>
+
+	<table class="calc-table">
+		<thead>
+            	<tr>
+                	<th>Stat</th>
+         		<th>Base</th>
+                	<th>IV</th>
+                	<th>EV</th>
+                	<th>Result</th>
+            	</tr>
+        	</thead>
+        	<tbody>
+            	<tr>
+                	<td>HP</td>
+               		<td><input type="number" id="base-hp" value="100" min="1" max="255"></td>
+                	<td><input type="number" id="iv-hp" value="31" min="0" max="31"></td>
+                	<td><input type="number" id="ev-hp" value="0" min="0" max="252"></td>
+                	<td id="result-hp">--</td>
+            	</tr>
+            	<tr>
+                	<td>Attack</td>
+                	<td><input type="number" id="base-atk" value="100" min="1" max="255"></td>
+                	<td><input type="number" id="iv-atk" value="31" min="0" max="31"></td>
+                	<td><input type="number" id="ev-atk" value="0" min="0" max="252"></td>
+                	<td id="result-atk">--</td>
+            	</tr>
+            	<tr>
+                	<td>Defense</td>
+                	<td><input type="number" id="base-def" value="100" min="1" max="255"></td>
+                	<td><input type="number" id="iv-def" value="31" min="0" max="31"></td>
+                	<td><input type="number" id="ev-def" value="0" min="0" max="252"></td>
+                	<td id="result-def">--</td>
+            	</tr>
+            	<tr>
+                	<td>Sp. Attack</td>
+                	<td><input type="number" id="base-spa" value="100" min="1" max="255"></td>
+                	<td><input type="number" id="iv-spa" value="31" min="0" max="31"></td>
+                	<td><input type="number" id="ev-spa" value="0" min="0" max="252"></td>
+                	<td id="result-spa">--</td>
+            	</tr>
+            	<tr>
+                	<td>Sp. Defense</td>
+                	<td><input type="number" id="base-spd" value="100" min="1" max="255"></td>
+                	<td><input type="number" id="iv-spd" value="31" min="0" max="31"></td>
+                	<td><input type="number" id="ev-spd" value="0" min="0" max="252"></td>
+                	<td id="result-spd">--</td>
+            	</tr>
+            	<tr>
+                	<td>Speed</td>
+                	<td><input type="number" id="base-spe" value="100" min="1" max="255"></td>
+                	<td><input type="number" id="iv-spe" value="31" min="0" max="31"></td>
+                	<td><input type="number" id="ev-spe" value="0" min="0" max="252"></td>
+                	<td id="result-spe">--</td>
+            	</tr>
+        	</tbody>
+	</table>
+
+    	<button id="calc-btn">Calculate</button>
+
+</div>
+
+</main>
+
+<script src="scripts/calculator.js"></script>
+
+<footer>
+
+	<p>Pokémon and Pokémon character names are trademarks of Nintendo, 
+  	Game Freak, and Creatures Inc. This site is a non-commercial project created for educational purposes as part of a class assignment; no copyright infringement is intended.</p>
+
+</footer>
+</footer>
+
+</body>
+
+</html>
+
+
+
+
