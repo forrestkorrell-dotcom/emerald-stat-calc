@@ -152,14 +152,15 @@ nav li a {
 
 main {
 	clear: left;
-    	background-color: #70c8a0;
+    background-color: #70c8a0;
 	padding: 2%; font-size: 1.25em;
 	text-align: center;
 }
 
 footer {
-    	background-color: #70c8a0;
+    background-color: #70c8a0;
 	color: #fff;
+	text-align: center;
 }
 
 .action {
