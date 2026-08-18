@@ -35,6 +35,10 @@ h1 {
 	color: #fff;
 }
 
+h2 {
+	color: #fff;
+}	
+
 header img {
 	max-width: 90%;
 }
@@ -157,6 +161,10 @@ nav li a {
 		h1 {
 			color: #fff;
 		}
+
+		h2 { 
+			color: #fff;
+		}	
 }
 
 main {
@@ -276,5 +284,9 @@ footer {
 }
 
 h1 {
+	color: #fff;
+}
+
+h2 {
 	color: #fff;
 }
