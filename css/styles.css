@@ -153,6 +153,10 @@ nav li a {
         	width: 500px;
         	max-width: 500px;
     	}
+	
+		h1 {
+			color: #fff;
+		}
 }
 
 main {
@@ -269,4 +273,8 @@ footer {
     	max-width: 60%;
     	margin: 0.5em auto;
     	display: block;
+}
+
+h1 {
+	color: #fff;
 }
