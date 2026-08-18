@@ -29,6 +29,7 @@ body {
 
 header {
 	width: 100%;
+	color: #fff;
 }
 
 header img {
@@ -98,6 +99,7 @@ nav li a {
     	header {
        		width: 25%;
         	float: left;
+			color: #fff;
     	}
 
     	nav {
