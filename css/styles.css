@@ -29,7 +29,10 @@ body {
 
 header {
 	width: 100%;
-	color: #fff;
+}
+
+h1 {
+	color: #fff
 }
 
 header img {
